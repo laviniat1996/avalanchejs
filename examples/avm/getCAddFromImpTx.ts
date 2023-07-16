@@ -41,7 +41,7 @@ const main = async (): Promise<any> => {
   const jsonStrC: string = JSON.stringify(txC)
   const jsnC = JSON.parse(jsonStrC)
 
-  let displayAddExp = () => {
+  const displayAddExp = () => {
     let importedTxImpInputs = bufToHex(
       jsnC.unsignedTx.transaction.inputs[0].address.data
     )
